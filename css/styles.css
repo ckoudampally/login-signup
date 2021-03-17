@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+height: 100%;
+width: 100%;
+background-image: linear-gradient(rgba(165, 31, 31, 0.5), rgba(63, 61, 206, 0.404)) ,url(/images/spy.jpg);
+background-position: center;
+background-size: cover;
+position: fixed;
+
+}
+
+.form-box{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    background-color: white;
+    margin: 6% auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.slide-box{
+    width: 200px;
+    margin: 30px auto;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 10px   #ECE2D0;
+}
+
+.button-btn{
+    padding: 10px 30px;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+
+}
+
+#btn{
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to bottom right , #4059AD, #97D8C4);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.contact-icons{
+    align-items: center;
+   
+}
+
+.contact-icons img{
+    width: 30px;
+
+}
