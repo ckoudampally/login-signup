@@ -14,8 +14,8 @@
 
                 <div class="slide-box">
                     <div id="btn"></div>
-                <button type="button" class="button-btn"> <b>Log In</b></button>
-                <button type="button" class="button-btn"><b>Signup</b></button>
+                <button type="button" class="button-btn" onclick="Login()"> <b>Log In</b></button>
+                <button type="button" class="button-btn" onclick="Signup()"><b>Signup</b></button>
             
             </div>
             <div class="contact-icons">
@@ -23,12 +23,66 @@
                 <img src="/images/linkedin-2170421_1280.png"> 
                 <img src="/images/twitter.png"> 
 
-            </div>
-            
+            </div> 
+            <form class="form-container"  id="Login">
+               
+                <label for="User Name">User Name</label><br>
+                <input type="text" class="fields" id="User Name" name="Name" placeholder="User Name" required><br>
+               
+                <label for="Password">Password</label><br>
+                <input type="password" class="fields" id="Password" name="Password" placeholder="Password" required> <br>
+               
+                <input type="checkbox" class="checkbox" >   <span>Remember Password</span>
+               
+                <button type="submit" class="submit-btn"> <b>Log In</b></button>
+           
+              </form>
+
+              <form class="form-container" id="Signup">
+               
+                <label for="Name">Name</label><br>
+                <input type="text" class="fields" id="Name" name="Name" placeholder=" Name" required><br>
+               
+                <label for="Email">Email</label><br>
+                <input type="email" class="fields" id="Email" name="Mail" placeholder="xyz@mail.com" required> <br>
+               
+                <label for="Password">Password</label><br>
+                <input type="password" class="fields" id="Password" name="Password" placeholder="Password" required> <br>
+
+                <input type="checkbox" class="checkbox" >   <span>I agree to all the terms and conditions</span>
+               
+                <button type="submit" class="submit-btn"> <b>Sign Up</b></button>
+           
+              </form>
+
+             
+                  
             </div>
             
         
         </div>
         
+        <script>
+            var x =document.getElementById("Login");
+            var y =document.getElementById("Signup");
+            var z =document.getElementById("btn");
+
+           
+
+            function Signup(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+
+            function Login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0";
+            }
+
+           
+
+        </script>
     </body>
 </html>
