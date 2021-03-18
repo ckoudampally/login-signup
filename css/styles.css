@@ -53,11 +53,16 @@ position: fixed;
 }
 
 .contact-icons{
-    align-items: center;
+   margin: 30px auto;
+  text-align: center;
+
    
 }
 
 .contact-icons img{
-    width: 30px;
+    width: 23px;
+    margin: 350px 12px;
+    border-radius: 50px;
+    cursor: pointer;
 
 }
